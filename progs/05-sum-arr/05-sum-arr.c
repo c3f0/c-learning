@@ -21,5 +21,6 @@ int sum_arr(int arr[], size_t size)
       sum += arr[i];
     }
 
+  // sum / size if we want to calculate average
   return sum;
 }
