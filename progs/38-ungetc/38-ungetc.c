@@ -40,6 +40,7 @@ int main()
         {
           ungetc(c, file);
           break;
+
         }
       else
         {
@@ -47,11 +48,13 @@ int main()
           i++;
         }
     }
+  printf("i: %d\n", i);
   op1[i] = '\0';
   printf("op1: %s\n", op1);
+
   char rest[256];
-
-
+  fgets(rest, 256, file);
+  printf("rest: %s\n", rest);
 
   printf("\n");
   fclose(file);
